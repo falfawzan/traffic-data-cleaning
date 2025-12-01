@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+conda_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data files (large - use download scripts)
+data/output/database/*.db
+data/output/database/*.db-journal
+data/output/database/*.db-wal
+data/output/database/*.db-shm
+data_cleaning_fusion_datasets/**/*.csv
+data_cleaning_fusion_datasets/**/*.shp
+data_cleaning_fusion_datasets/**/*.dbf
+data_cleaning_fusion_datasets/**/*.shx
+data_cleaning_fusion_datasets/**/*.prj
+data_cleaning_fusion_datasets/**/*.cpg
+
+# Output files (generated)
+data/output/cleaned_data/*.csv
+data/output/mapmatching/*.csv
+data/output/figures/*.png
+data/output/quality_metrics/*.csv
+data/output/quality_metrics/*.json
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+~$*
+*.swp
+
+# Large zip files
+*.zip
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.local
+

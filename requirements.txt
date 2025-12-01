@@ -1,0 +1,42 @@
+# Core Data Processing
+pandas>=2.2.3
+numpy>=2.2.3
+scipy>=1.15.2
+
+# Visualization
+matplotlib>=3.10.1
+seaborn>=0.13.2
+Pillow>=11.1.0
+
+# Geospatial
+geopandas>=1.0.1
+Shapely>=2.0.7
+geopy>=2.4.1
+gotrackit>=0.3.17
+
+# Network Analysis
+networkx>=3.4.2
+
+# Time Handling
+pytz>=2024.2
+
+# Data Quality
+chardet>=5.0.0
+
+# Filtering and Smoothing
+pykalman>=0.10.1
+
+# Jupyter
+jupyter>=1.0.0
+ipython>=8.0.0
+ipykernel>=6.0.0
+
+# Database
+# sqlite3 is built-in to Python
+
+# Progress Bars
+tqdm>=4.65.0
+
+# System
+psutil>=5.9.0
+

@@ -1,0 +1,175 @@
+TABLE: od
+=========
+Data_Periods (TEXT) 
+Mode_of_Travel (TEXT) 
+Origin_Zone_ID (REAL) 
+Origin_Zone_Name (TEXT) 
+Origin_Zone_Is_Pass_Through (TEXT) 
+Origin_Zone_Direction_(degrees) (INTEGER) 
+Origin_Zone_is_Bi_Direction (TEXT) 
+Destination_Zone_ID (REAL) 
+Destination_Zone_Name (TEXT) 
+Destination_Zone_Is_Pass_Through (TEXT) 
+Destination_Zone_Direction_(degrees) (INTEGER) 
+Destination_Zone_is_Bi_Direction (TEXT) 
+Day_Type (TEXT) 
+Day_Part (TEXT) 
+Average_Daily_O_D_Traffic_(StL_Volume) (REAL) 
+Average_Daily_Origin_Zone_Traffic_(StL_Volume) (INTEGER) 
+Average_Daily_Destination_Zone_Traffic_(StL_Volume) (REAL) 
+Avg_Travel_Time_(sec) (REAL) 
+
+TABLE: tmc_to_link
+==================
+tmc (TEXT) 
+road_order (INTEGER) 
+link_ids (TEXT) 
+
+TABLE: node
+===========
+name (REAL) 
+node_id (INTEGER) 
+osm_node_id (INTEGER) 
+ctrl_type (TEXT) 
+x_coord (REAL) 
+y_coord (REAL) 
+is_boundary (INTEGER) 
+activity_type (TEXT) 
+poi_id (REAL) 
+zone_id (REAL) 
+notes (REAL) 
+
+TABLE: SegmentId_to_link
+========================
+link_id (INTEGER) 
+SegmentId (TEXT) 
+osm_way_id (INTEGER) 
+
+TABLE: zone_name_to_link
+========================
+Zone_Name (TEXT) 
+link_id (INTEGER) 
+SegmentId (TEXT) 
+
+TABLE: link
+===========
+link_id (INTEGER) 
+name (TEXT) 
+osm_way_id (INTEGER) 
+from_node_id (INTEGER) 
+to_node_id (INTEGER) 
+directed (INTEGER) 
+geometry (TEXT) 
+dir_flag (INTEGER) 
+length (REAL) 
+facility_type (TEXT) 
+link_type (INTEGER) 
+free_speed (INTEGER) 
+free_speed_raw (TEXT) 
+lanes (INTEGER) 
+capacity (INTEGER) 
+allowed_uses (TEXT) 
+toll (TEXT) 
+notes (REAL) 
+
+TABLE: Inventory
+================
+zone_id (INTEGER) 
+display_name (TEXT) 
+state (TEXT) 
+rtmc (REAL) 
+timezone (TEXT) 
+road (TEXT) 
+direction (TEXT) 
+location_description (TEXT) 
+lane_type (TEXT) 
+organization (TEXT) 
+detector_type (TEXT) 
+latitude (REAL) 
+longitude (REAL) 
+bearing (REAL) 
+default_speed (REAL) 
+interval (REAL) 
+length (REAL) 
+
+TABLE: TMC_Identification
+=========================
+tmc (TEXT) 
+road (TEXT) 
+direction (TEXT) 
+intersection (TEXT) 
+state (TEXT) 
+county (TEXT) 
+zip (INTEGER) 
+start_latitude (REAL) 
+start_longitude (REAL) 
+end_latitude (REAL) 
+end_longitude (REAL) 
+miles (REAL) 
+road_order (REAL) 
+timezone_name (TEXT) 
+type (TEXT) 
+country (TEXT) 
+active_start_date (TEXT) 
+active_end_date (REAL) 
+
+TABLE: lane_readings
+====================
+zone_id (INTEGER) 
+lane_number (INTEGER) 
+lane_id (INTEGER) 
+measurement_start (TEXT) 
+speed (INTEGER) 
+volume (INTEGER) 
+occupancy (INTEGER) 
+quality (INTEGER) 
+local_time (TEXT) 
+
+TABLE: Readings
+===============
+tmc_code (TEXT) 
+measurement_tstamp (TEXT) 
+speed (REAL) 
+historical_average_speed (REAL) 
+reference_speed (REAL) 
+travel_time_seconds (REAL) 
+confidence_score (REAL) 
+cvalue (REAL) 
+local_time (TEXT) 
+
+TABLE: trajs
+============
+TripId (TEXT) 
+DeviceId (TEXT) 
+ProviderId (TEXT) 
+TripTimezone (TEXT) 
+TrajIdx (INTEGER) 
+TrajRawDistanceM (REAL) 
+TrajRawDurationMillis (INTEGER) 
+SegmentId (TEXT) 
+SegmentIdx (INTEGER) 
+LengthM (REAL) 
+CrossingStartOffsetM (REAL) 
+CrossingEndOffsetM (REAL) 
+CrossingStartDateUtc (TEXT) 
+CrossingEndDateUtc (TEXT) 
+CrossingSpeedKph (REAL) 
+OnRoadNetworkSnapCount (INTEGER) 
+ErrorCodes (TEXT) 
+CrossingStartDateLocal (TEXT) 
+CrossingEndDateLocal (TEXT) 
+CrossingSpeedMph (REAL) 
+
+TABLE: waypoint
+===============
+journey_id (TEXT) 
+capture_time (INTEGER) 
+latitude (REAL) 
+longitude (REAL) 
+fuzzed_point (TEXT) 
+ignition_status (TEXT) 
+heading_deg_north (REAL) 
+elevation_ft (REAL) 
+speed_mph (REAL) 
+local_time (TEXT) 
+
